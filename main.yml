@@ -24,6 +24,7 @@
           - htop
           - tmux
           - git
+          - tig
           - screen
           - curl
           - net-tools
@@ -59,7 +60,7 @@
       vars:
         user: "{{ lookup('env','USER') }}" #remove
         apps:
-          - subl
+          #- subl
           - firefox
           #- chromium-browser
           - terminator

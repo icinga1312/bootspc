@@ -1,0 +1,13 @@
+todo: configure git 
+.ssh/config
+
+user@user-len:~$ dconf dump /org/gnome/shell/
+[/]
+command-history=['r']
+favorite-apps=['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'snap-store_ubuntu-software.desktop']
+welcome-dialog-last-shown-version='42.0'
+
+[extensions/dash-to-dock]
+show-mounts=false
+show-trash=false
+
