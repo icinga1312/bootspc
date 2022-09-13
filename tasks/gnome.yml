@@ -17,4 +17,4 @@
 - name: dock-click-to-minimize
   community.general.dconf:
     key: "/org/gnome/shell/extensions/dash-to-dock/click-action"
-    value: "'minimize'"
+    value: "'minimize-or-previews'"
