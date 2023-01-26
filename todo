@@ -11,3 +11,19 @@ welcome-dialog-last-shown-version='42.0'
 show-mounts=false
 show-trash=false
 
+
+
+use files/*
+
+virtualenv osenv
+source osenv/bin/activate
+pip3 install hvac 'ansible<2.11' python-openstackclient python-heatclient yq
+
+Host *
+    StrictHostKeyChecking no
+snap install terraform --classic
+
+python-octaviaclient
+python-ironicclient
+python-magnumclient
+osc-placement
