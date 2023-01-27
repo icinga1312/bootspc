@@ -12,7 +12,9 @@ alias ppid='ps -o ppid= -p'
 alias gitorig="find . -name '*\.orig'"
 alias git-fixup='git commit -a --fixup HEAD'
 
+alias valo='vault login username=$VAULT_USER --method=ldap'
 alias ose='echo $OS_REGION_NAME'
 alias r='echo $OS_REGION_NAME'
 
-alias valo='vault login --method=ldap'
+
+alias tome='cd /home/user/Downloads/t-engine4-linux64-1.6.7; ./t-engine'
