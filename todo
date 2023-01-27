@@ -27,3 +27,6 @@ python-octaviaclient
 python-ironicclient
 python-magnumclient
 osc-placement
+
+
+create simlync to .bash_aliases IF NOT EXISTS
