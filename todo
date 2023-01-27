@@ -1,5 +1,4 @@
 todo: configure git 
-.ssh/config
 
 user@user-len:~$ dconf dump /org/gnome/shell/
 [/]
@@ -12,15 +11,12 @@ show-mounts=false
 show-trash=false
 
 
-
 use files/*
 
 virtualenv osenv
 source osenv/bin/activate
 pip3 install hvac 'ansible<2.11' python-openstackclient python-heatclient yq
 
-Host *
-    StrictHostKeyChecking no
 snap install terraform --classic
 
 python-octaviaclient
