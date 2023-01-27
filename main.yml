@@ -48,6 +48,7 @@
           - meld
           - touchegg # multitouch touchpad for X-server
           - rmlint   # tool to manage duplicated files
+          - lvm2
     - name: isntall snap packages
       community.general.snap:
         name:
