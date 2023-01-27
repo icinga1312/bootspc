@@ -30,3 +30,4 @@ osc-placement
 
 
 create simlync to .bash_aliases IF NOT EXISTS
+create simlync to .ssh/config    IF NOT EXISTS

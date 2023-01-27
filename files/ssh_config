@@ -1,0 +1,24 @@
+Host *
+  StrictHostKeyChecking no
+Host 10*
+  Port 2200
+  User root
+Host dev*
+ User root
+ Port 2200
+ ForwardAgent yes
+Host dep
+  User root
+  Port 22
+  ForwardAgent yes
+Host *gc.onl
+ User root
+ Port 2200
+Host *ecnl.ru
+ User root
+ Port 2200
+Host *shy.su
+ User root
+Host *.shy.su
+  Port 1337 # or maybe another magic number
+  User user
