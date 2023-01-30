@@ -4,21 +4,24 @@ Host 10*
   Port 2200
   User root
 Host dev*
- User root
- Port 2200
- ForwardAgent yes
+  User root
+  Port 2200
+  ForwardAgent yes
 Host dep
   User root
   Port 22
   ForwardAgent yes
+Host *-sl-pc*
+  User root
+  Port 2200
 Host *gc.onl
- User root
- Port 2200
+  User root
+  Port 2200
 Host *ecnl.ru
- User root
- Port 2200
+  User root
+  Port 2200
 Host *shy.su
- User root
+  User root
 Host *.shy.su
   Port 1337 # or maybe another magic number
   User user
