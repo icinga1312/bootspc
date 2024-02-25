@@ -14,6 +14,9 @@ Host dep
 Host *-sl-pc*
   User root
   Port 2200
+Host *-c?-*
+  User root
+  Port 2200
 Host *gc.onl
   User root
   Port 2200
