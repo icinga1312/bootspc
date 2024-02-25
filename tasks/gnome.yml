@@ -1,3 +1,11 @@
+- name: Check for the existence of /sys/class/power_supply/BAT*
+  ansible.builtin.find:
+    paths: "/sys/class/power_supply"
+    file_type: any
+    patterns: 'BAT*'
+  register: battery_check
+- set_fact:
+    is_laptop: "{{ battery_check.matched > 0 }}"
 - name: add ru layout
   community.general.dconf:
     key: "/org/gnome/desktop/input-sources/sources"
@@ -14,7 +22,19 @@
   community.general.dconf:
     key: "/org/gnome/desktop/interface/color-scheme"
     value: "'prefer-dark'"
+#- name: battery percentage
+#  vars:
+#    my_dict:
+#      "/org/gnome/desktop/interface/show-battery-percentage": true
+#  community.general.dconf:
+#    key: "{{ item.key }}"
+#    value: "{{ item.value }}"
+#  loop: "{{ my_dict | dict2items }}"
 - name: dock-click-to-minimize
   community.general.dconf:
     key: "/org/gnome/shell/extensions/dash-to-dock/click-action"
     value: "'minimize-or-previews'"
+# TODO
+#[desktop/interface]
+#show-battery-percentage=true
+#text-scaling-factor=1.25
