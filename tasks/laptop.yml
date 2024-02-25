@@ -1,0 +1,4 @@
+#/etc/systemd/logind.conf
+#[Login]
+#HandleLidSwitch=ignore
+
