@@ -1,0 +1,37 @@
+apt_packages:
+  - python3-pip
+  - python3-psutil    # needed for dconf module
+  - yaru-theme-gnome-shell
+  - yaru-theme-gtk
+  - yaru-theme-icon
+  - wget
+  - htop
+  - curl
+  - net-tools
+  - gparted
+  #- lshw-gtk
+  #- vmfs-tools
+  #- wine-stable
+  #- steam-installer
+  - network-manager-openconnect-gnome
+  - vim
+  - vlc 
+  - terminator
+  - openconnect
+  - gnome-tweaks
+  #- chromium-browser
+  - goldendict
+  - jq
+  - wireguard
+  - resolvconf # needed for wg-quick to work
+  - rmlint   # tool to manage duplicated files
+  - lvm2
+
+apt_packages_work:
+  - tmux
+  - git
+  - tig
+  - screen
+  - docker.io
+  - docker-compose
+  - meld
