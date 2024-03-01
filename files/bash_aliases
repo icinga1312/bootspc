@@ -2,6 +2,7 @@ alias wu='sudo wg-quick up /etc/wireguard/dtp1.conf'
 alias wd='sudo wg-quick down /etc/wireguard/dtp1.conf'
 
 alias v='source ~/osenv/bin/activate'
+alias nenv='source /home/user/git/dynamic_inv/ansible2119/bin/activate'
 alias got='git'
 alias gits='git status'
 alias gitd='git diff'
@@ -11,8 +12,9 @@ alias g-1='git reset --hard HEAD~1'
 alias ppid='ps -o ppid= -p'
 alias gitorig="find . -name '*\.orig'"
 alias git-fixup='git commit -a --fixup HEAD'
+alias fix='git commit -a --fixup=HEAD'
 
-alias valo='vault login username=$VAULT_USER --method=ldap'
+alias valo='vault login --method=ldap username=$VAULT_USER'
 alias ose='echo $OS_REGION_NAME'
 alias r='echo $OS_REGION_NAME'
 
