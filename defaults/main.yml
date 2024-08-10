@@ -9,13 +9,9 @@ apt_packages:
   - curl
   - net-tools
   - gparted
-  #- lshw-gtk
-  #- vmfs-tools
-  #- wine-stable
-  #- steam-installer
   - network-manager-openconnect-gnome
   - vim
-  - vlc 
+  - vlc
   - terminator
   - openconnect
   - gnome-tweaks
@@ -26,6 +22,14 @@ apt_packages:
   - resolvconf # needed for wg-quick to work
   - rmlint   # tool to manage duplicated files
   - lvm2
+
+apt_packages_big:
+  - ffmpeg
+  - obs-studio
+  - lshw-gtk
+  - vmfs-tools
+  - wine-stable
+  - steam-installer
 
 apt_packages_work:
   - tmux
