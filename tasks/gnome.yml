@@ -1,3 +1,5 @@
+# TODO: drop gnome-games, autoremove
+
 - name: Check for the existence of /sys/class/power_supply/BAT*
   ansible.builtin.find:
     paths: "/sys/class/power_supply"

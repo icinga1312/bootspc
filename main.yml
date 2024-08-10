@@ -1,5 +1,12 @@
 ---
 
+- name: gnome
+  hosts: localhost
+  gather_facts: false
+  become: false
+  tasks:
+    - include: tasks/gnome.yml
+
 - name: Playbook to setup desktop
   hosts: target
   gather_facts: false
@@ -42,12 +49,4 @@
         dest: "/home/{{ user }}/.config/autostart/{{ item }}.desktop"
       with_items: "{{ apps }}"
 
-# TODO: drop gnome-games, autoremove
-
-- name: gnome
-  hosts: target
-  gather_facts: false
-  become: false
-  tasks:
-    - include: tasks/gnome.yml
 
