@@ -1,5 +1,5 @@
-alias wu='sudo wg-quick up /etc/wireguard/dtp1.conf'
-alias wd='sudo wg-quick down /etc/wireguard/dtp1.conf'
+alias wu='sudo wg-quick up /etc/wireguard/ruvdsp2.conf'
+alias wd='sudo wg-quick down /etc/wireguard/ruvdsp2.conf'
 
 alias v='source ~/osenv/bin/activate'
 alias nenv='source /home/user/git/dynamic_inv/ansible2119/bin/activate'
@@ -18,6 +18,7 @@ alias valo='vault login --method=ldap username=$VAULT_USER'
 alias ose='echo $OS_REGION_NAME'
 alias r='echo $OS_REGION_NAME'
 
-alias update='sudo apt-get update && sudo apt-get upgrade'
+alias aptade='sudo apt-get update && sudo apt-get upgrade -y'
+alias updade='sudo apt-get update && sudo apt-get upgrade -y'
 
 alias tome='cd /home/user/Downloads/t-engine4-linux64-1.6.7; ./t-engine'
